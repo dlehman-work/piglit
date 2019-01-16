@@ -11,6 +11,7 @@ link_libraries (
 
 piglit_add_executable (arb_sample_shading-api api.c)
 piglit_add_executable (arb_sample_shading-builtin-gl-num-samples builtin-gl-num-samples.cpp)
+piglit_add_executable (arb_sample_shading-builtin-gl-num-samples-multiple-fbs builtin-gl-num-samples-multiple-fbs.cpp)
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-id builtin-gl-sample-id.cpp)
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-mask builtin-gl-sample-mask.cpp)
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-mask-simple builtin-gl-sample-mask-simple.cpp)
