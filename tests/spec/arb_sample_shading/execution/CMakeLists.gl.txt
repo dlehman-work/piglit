@@ -18,6 +18,7 @@ piglit_add_executable (arb_sample_shading-builtin-gl-sample-mask-simple builtin-
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-mask-mrt-alpha builtin-gl-sample-mask-mrt-alpha.cpp)
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-mask-mrt-alpha-to-coverage-combinations builtin-gl-sample-mask-mrt-alpha-to-coverage-combinations.cpp)
 piglit_add_executable (arb_sample_shading-builtin-gl-sample-position builtin-gl-sample-position.cpp)
+piglit_add_executable (arb_sample_shading-builtin-gl-sample-position-multiple-fbs builtin-gl-sample-position-multiple-fbs.cpp)
 piglit_add_executable (arb_sample_shading-interpolate-at-sample-position interpolate-at-sample-position.cpp)
 piglit_add_executable (arb_sample_shading-ignore-centroid-qualifier ignore-centroid-qualifier.cpp)
 piglit_add_executable (arb_sample_shading-samplemask samplemask.cpp)
