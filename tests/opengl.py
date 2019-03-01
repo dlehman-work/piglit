@@ -2017,6 +2017,10 @@ with profile.test_list.group_manager(
     g(['arb_gpu_shader5-interpolateAtOffset'])
     g(['arb_gpu_shader5-interpolateAtOffset-nonconst'])
 
+    for sample_count in MSAA_SAMPLE_COUNTS:
+        g(['arb_gpu_shader5-interpolate-at-sample-position', sample_count],
+          'interpolate-at-sample-position {}'.format(sample_count))
+
 
 with profile.test_list.group_manager(
         PiglitGLTest,
@@ -2161,8 +2165,6 @@ with profile.test_list.group_manager(
           run_concurrent=False)
 
     for sample_count in MSAA_SAMPLE_COUNTS:
-        g(['arb_sample_shading-interpolate-at-sample-position', sample_count],
-          'interpolate-at-sample-position {}'.format(sample_count))
         g(['arb_sample_shading-ignore-centroid-qualifier', sample_count],
           'ignore-centroid-qualifier {}'.format(sample_count))
         g(['arb_sample_shading-samplemask', sample_count, 'all', 'all'],
